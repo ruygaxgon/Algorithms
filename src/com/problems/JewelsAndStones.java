@@ -1,4 +1,4 @@
-package problems;
+package com.problems;
 
 public class JewelsAndStones {
 
