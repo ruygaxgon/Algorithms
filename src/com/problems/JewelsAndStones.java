@@ -1,10 +1,16 @@
 package com.problems;
 
+/**
+ * 
+ * @author Ruy
+ *
+ *	Find char Jewels inside the String stones 
+ */
 public class JewelsAndStones {
 
 	public static void main(String[] args) {
-		String jewels = "aA";
-		String stones = "aAAbbbb";
+		String jewels = "jJ";
+		String stones = "jJJssssJs";
 		findJewels(jewels, stones);
 	}
 	
