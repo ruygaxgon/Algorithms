@@ -24,6 +24,7 @@ public class BreadthFirstSearch {
 		node6.setLeft(node7);
 		printByLevel(root);
 		printTree(root);
+		System.out.println(getHeight(root));
 	}
 
 	private static void printByLevel(Node root) {
@@ -64,6 +65,17 @@ public class BreadthFirstSearch {
 				queue.add(node.getRight());
 			}
 		}
+	}
+
+	public static int getHeight(Node root) {
+		if (root == null) {
+			return -1;
+		}
+
+		int left = 1 + getHeight(root.getLeft());
+		int right = 1 + getHeight(root.getRight());
+
+		return Math.max(left, right);
 	}
 }
 
